@@ -190,6 +190,10 @@
         <input type="email" name="email" placeholder="Email Address" required>
         <input type="tel" name="phone" placeholder="Phone Number">
         <textarea name="message" rows="5" placeholder="Tell us about your case" required></textarea>
+        <div style="position:absolute;left:-9999px;" aria-hidden="true">
+    <label for="hpField">Leave this field empty</label>
+    <input type="text" id="hpField" name="hpField" tabindex="-1" autocomplete="off">
+</div>
         <button type="submit">Send Inquiry</button>
         <p id="form-status" role="status"></p>
     </form>
