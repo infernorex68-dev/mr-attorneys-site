@@ -29,7 +29,7 @@ const observer = new IntersectionObserver((entries) => {
 
 targets.forEach(el => observer.observe(el));
 // Contact form -> Java backend
-const API_URL = 'http://localhost:8080/api/contact';
+const API_URL = 'https://mr-attorneys-api.onrender.com/api/contact';
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 
