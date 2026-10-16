@@ -22,6 +22,9 @@ public class ContactController {
 
     @PostMapping("/contact")
     public ResponseEntity<Map<String, String>> submit(@Valid @RequestBody ContactRequest request) {
+                if (request.hpField() != null && !request.hpField().isBlank()) {
+            return ResponseEntity.ok(Map.of("status", "received"));
+        }
         try {
             emailService.sendInquiry(request);
             return ResponseEntity.ok(Map.of("status", "received"));
