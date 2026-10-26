@@ -175,11 +175,6 @@ any Google Business Profile.
 | Build fails with a missing placeholder | A `MAIL_*` variable is not set |
 | Certificate error on a custom domain | DNS still propagating, or CAA/AAAA records interfering |
 
-## Ownership and handover notes
 
-- The Brevo account (SMTP credentials) belongs to the client.
-- The GitHub repository and Render workspace currently sit under the developer's
-  accounts. Render's Hobby plan is single-user; team access needs a paid
-  workspace plan, or collaboration can happen through GitHub.
 - The domain is registered by the client at domains.co.za; DNS changes need access
   to that account.
